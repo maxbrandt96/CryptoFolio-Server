@@ -5,11 +5,12 @@ const portfolioSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  portfolio: {
+  cryptos: {
     type: Object,
     required: true,
     default: {},
   },
+  
 });
 
 const Portfolio = mongoose.model("Portfolio", portfolioSchema);
